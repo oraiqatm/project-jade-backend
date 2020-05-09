@@ -1,8 +1,9 @@
 var PORT = process.env.PORT || 3000;
 var express = require('express')
 var admin = require("firebase-admin");
+var bodyParser = require('body-parser'); //used to pass post data
 
-
+var urlencoderParser = bodyParser.urlencoded({extended:false});
 // Fetch the service account key JSON file contents
 var serviceAccount = require("./serviceAccountKey.json");
 // Initialize the app with a service account, granting admin privileges
@@ -22,7 +23,7 @@ app.get('/rasp', function(req, res){
     
 });
 
-app.post('/rasp', function(req, res){
+app.post('/rasp',urlencoderParser, function(req, res){
     var rasp_command = req.param('Rasp_Command');
     console.log(rasp_command);
     ref.set({command: rasp_command});
