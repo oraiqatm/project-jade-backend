@@ -26,7 +26,7 @@ app.post('/', function(req, res){
     var rasp_command = req.param('Rasp_Command');
     ref.set({command: rasp_command});
     ref.once("value", function(snapshot) {
-        res.send(snapshot.val());
+        res.send(req.param('Rasp_Command'),snapshot.val());
     });
 });
 
