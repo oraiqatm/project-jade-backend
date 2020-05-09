@@ -22,7 +22,7 @@ app.get('/', function(req, res){
     
 });
 
-app.post('/', function(req, res){
+app.post('/rasp', function(req, res){
     var rasp_command = req.param('Rasp_Command');
     console.log(rasp_command);
     ref.set({command: rasp_command});
