@@ -15,7 +15,7 @@ var db = admin.database();
 var ref = db.ref("/py_command")
 
 var app =express();
-app.get('/', function(req, res){
+app.get('/rasp', function(req, res){
     ref.once("value", function(snapshot) {
         res.send(snapshot.val());
     });
