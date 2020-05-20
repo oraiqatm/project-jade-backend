@@ -23,6 +23,12 @@ app.get('/rasp', function(req, res){
     
 });
 
+app.get('/', function(req, res){
+    ref.once("value", function(snapshot){
+        res.send(snapshot.val())
+    });
+});
+
 app.post('/rasp',urlencoderParser, function(req, res){
     var rasp_command = req.param('Rasp_Command');
     console.log(rasp_command);
