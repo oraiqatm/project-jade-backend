@@ -31,8 +31,9 @@ app.get('/', function(req, res){
 
 app.post('/rasp',urlencoderParser, function(req, res){
     var rasp_command = req.param('Rasp_Command');
+    var colorP = req.param('Color')
     console.log(rasp_command);
-    ref.set({command: rasp_command});
+    ref.set({command: rasp_command, color: colorP});
     ref.once("value", function(snapshot) {
         res.send(snapshot.val());
     });
