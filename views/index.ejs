@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+
+Name       : Untamed 
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20131220
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+<link href="/assets/default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/assets/fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+</head>
+<body>
+<div id="header-wrapper">
+	<div id="header" class="container">
+		<div id="logo">
+			<h1><span class="fa fa-user"></span><a href="#">JADE</a></h1>
+		</div>
+		<div id="menu">
+			<ul>
+				<li class="current_page_item"><a href="#" accesskey="1" title="">Homepage</a></li>
+				<li><a href="#" accesskey="3" title="">Shop</a></li>
+				<li><a href="#" accesskey="4" title="">About Us</a></li>
+				<li><a href="#" accesskey="5" title="">Contact Us</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="header-featured">
+	<div id="banner-wrapper">
+		<div id="banner" class="container">
+			<h2>JADE: Just Another DiffusEr</h2>
+			<p>
+                A diffuser is a device that spreads something over a wide area. 
+                In this case essential oils are spread across a workplace or home.<br>
+                <strong>Motivation</strong><br> 
+            </p>
+            <ul>
+                <li>Go from large scale (JAM and JAM v2) to something smaller and cheaper to build.</li>
+                <li>Try to make a device that is somewhat out of the ordinary.</li>
+            </ul>
+            <p><br><Strong>Objective:</Strong><br>
+                JADE is an essential oil diffuser that is aimed at people that are looking for 
+                a method of stress relief. Provide an easy to use diffuser.
+            </p>
+			<!--<a href="#" class="button">SHOP NOW</a> -->
+		</div>
+	</div>
+</div>
+<div id="wrapper">
+<div id="page" class="container">
+		<div id="content">
+			<div class="title">
+				<h2>The Inner Workings of JADE</h2>
+				<span class="byline">How does it work?</span> </div>
+			<p><img src="/assets/blockDiagram.JPG" alt="" class="image image-full" />
+			</p>
+            <p><strong>Function Description of Blocks</strong></p>
+            <ul>
+                <li><strong>Server</strong></li>
+                <ul>
+                    <li><strong>Node JS Web API </strong>- Handles GET/POST requests made to the server.</li>
+                    <li><strong>Firebase Realtime Database</strong> - retrieves data from the POST requests and stores it to the real-time database.</li>
+                    <li><strong>Remote Monitoring</strong> - displays current data to clients through the GET requests.</li>
+                </ul>
+                <li><strong>Android App</strong></li>
+                <ul>
+                    <li><strong>User Interface</strong>- a GUI that sends the command to the server at the push of a button. 
+                        Also, to allow for the user’s convenience, basic information will be displayed from the server to 
+                        the GUI. </li>
+                </ul>
+                <li><strong>Raspberry PI</strong></li>
+                <ul>
+                    <li><strong>LCD Display </strong>- Displays the current data from the database.</li>
+                    <li><strong>Activate/Deactivate Fan</strong> - Data from the database will activate or deactivate the fan.</li>
+                    <li><strong>LED Controller</strong> - Data from the database controls the color of LEDs and activation/deactivation of “Live Mode” (Led and Music output Together)</li>
+                    <li><strong>Sound Sensor Detection</strong>-monitors the input value of the sound sensor in order to trigger an LED pulse.</li>
+
+                </ul>
+            </ul>
+            
+		</div>
+		<div id="sidebar">
+			<ul class="style1">
+				<li class="first">
+					<h3>Available Diffuser</h3>
+					<p><a href="#">Click here</a></p>
+				</li>
+				<li>
+					<h3>3D Models</h3>
+					<p><a href="#">Click here</a></p>
+				</li>
+				<li>
+					<h3>Raspberry PI</h3>
+					<p><a href="#">Click here</a></p>
+				</li>
+			</ul>
+            <div id="stwo-col">
+				<div class="sbox1">
+					<h2>Etiam rhoncus</h2>
+					<ul class="style2">
+						<li><a href="#">Semper quis egetmi dolore</a></li>
+						<li><a href="#">Quam turpis feugiat dolor</a></li>
+						<li><a href="#">Amet ornare hendrerit lectus</a></li>
+						<li><a href="#">Quam turpis feugiat dolor</a></li>
+						<li><a href="#">Consequat lorem phasellus</a></li>
+						<li><a href="#">Amet turpis feugiat amet</a></li>
+					</ul>
+				</div>
+				<div class="sbox2">
+					<h2>Integer gravida</h2>
+					<ul class="style2">
+						<li><a href="#">Semper quis egetmi dolore</a></li>
+						<li><a href="#">Quam turpis feugiat dolor</a></li>
+						<li><a href="#">Quam turpis feugiat dolor</a></li>
+						<li><a href="#">Amet ornare hendrerit lectus</a></li>
+						<li><a href="#">Consequat lorem phasellus</a></li>
+						<li><a href="#">Amet turpis feugiat amet</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+    </div>	
+    <div id="featured-wrapper">
+        <div class="title">
+            <h2>User Interface</h2>
+            <span class="byline">What can it do?</span> </div>
+        <p><img src="/assets/UI.JPG" alt="" width="800" height="600" />
+
+        </p>
+		<div id="featured" class="extra2 container">
+			<div class="main-title">
+				<h2>Final Product</h2>
+				<span class="byline">Video made by Ryan Santiago</span> </div>
+	
+			<div class="ebox1"> <span class="fa fa-cogs"></span>
+				<div class="title">
+					<h2>Fusce ultrices fringilla</h2>
+					<span class="byline">Integer sit amet pede vel arcu aliquet pretium</span> </div>
+				<p>Consectetuer adipiscing elit. Nam pede erat, porta eu, lobortis eget, tempus et, tellus. Etiam neque. Vivamus consequat lorem at nisl. Nullam non wisi a sem semper eleifend. Donec mattis libero eget urna. Duis pretium velit ac mauris. Proin eu wisi suscipit nulla suscipit interdum. Aenean lectus lorem, imperdiet at, ultrices eget, ornare et, wisi. </p>
+				<a href="#" class="button">Etiam posuere</a> </div>
+			<div class="ebox2"> <span class="fa fa-sun-o"></span>
+				<div class="title">
+					<h2>Donec dictum metus</h2>
+					<span class="byline">Integer sit amet pede vel arcu aliquet pretium</span> </div>
+				<p>Donec pulvinar ullamcorper metus. In eu odio at lectus pulvinar mollis. Vestibulum sem magna, elementum ut, vestibulum eu, facilisis quis, arcu. Mauris a dolor. Nulla facilisi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed blandit. Phasellus pellentesque, ante nec iaculis dapibus, eros justo auctor lectus.</p>
+				<a href="#" class="button">Etiam posuere</a> </div>
+		</div>
+	</div>
+</div>
+<div id="copyright" class="container">
+	<p>&copy; Untitled. All rights reserved. | Photos by <a href="http://fotogrph.com/">Fotogrph</a> | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
+</div>
+</body>
+</html>

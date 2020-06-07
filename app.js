@@ -16,6 +16,9 @@ var db = admin.database();
 var ref = db.ref("/py_command")
 
 var app =express();
+app.set ('view engine', 'ejs');
+app.use('/assets', express.static('assets'));
+
 app.get('/rasp', function(req, res){
     ref.once("value", function(snapshot) {
         res.send(snapshot.val());
@@ -25,7 +28,7 @@ app.get('/rasp', function(req, res){
 
 app.get('/', function(req, res){
     ref.once("value", function(snapshot){
-        res.send(snapshot.val())
+        res.render('index');
     });
 });
 
