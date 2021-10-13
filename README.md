@@ -1,4 +1,6 @@
-# project-jade-backend
+# project-jade-web
+
+Demo website for Project Jade.
 
 Backend for project Jade using NodeJS, express, Firebase-admin, and ejs.
-This backend communicates with a phone application developed in android studio.
+
